@@ -1,0 +1,13 @@
+<!--pages/driver/confirm/confirm.wxml-->
+<view class='title'>请准备好注册所需的材料</view>
+<view class='line1'>1.身份证2.驾驶证3.行驶证</view>
+<view class='line2'>4.保险证---------3.资格证</view>
+
+<view class='buttons'>
+<view class='button' bindtap='already'>
+<text class='text'>已经准备</text>
+</view>
+<view class='button' bindtap='neibu'>
+<text class='text'>点子内部司机</text>
+</view>
+</view>

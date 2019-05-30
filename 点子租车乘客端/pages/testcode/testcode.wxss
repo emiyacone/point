@@ -1,0 +1,43 @@
+/* pages/testcode/testcode.wxss */
+.top{
+  margin-top:100px;
+  font-size: 30px;
+  margin-left:5%;
+}
+.etitle{
+  margin-top: 25px;
+  margin-left: 5%;
+  color:grey;
+  font-size: 15px;
+}
+.testcodes{
+  display: flex;
+    margin-top: 30px;
+}
+.changetime{
+  margin-left: 80%;
+  width:15%;
+  height:20px;
+  margin-top: 20px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+}
+.button{
+  height:45px;
+  margin-top: 20px;
+  margin-left: 5%;
+  width:90%;
+  font-size: 30px;
+  text-align: center;
+  background-color: #9ac81f;
+  border-radius: 20px 20px 20px 20px;
+  color:white;
+}
+.end{
+  margin-top:20px;
+  margin-left:10%;
+  font-size: 15px;
+  display:flex;
+}

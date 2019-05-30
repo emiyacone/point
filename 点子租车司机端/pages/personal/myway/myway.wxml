@@ -1,0 +1,113 @@
+<!--pages/personal/myway/myway.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--已完成-->
+<view hidden="{{currentTab!==0}}">
+<view class='finishway' wx:for="{{olist1}}"wx:for-index="index" wx:for-item="item">
+<view class='line'></view>
+<view class='title'>
+<text>{{item.waytype}}</text>
+<view class='learnmore'>查看详情</view>
+</view>
+<view class='timemessage'>
+<image src='../../images/time_fill.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view class='timess'>{{item.sdate_str}}</view>
+</view>
+
+<view class='startplace'>
+<image src='../../images/startplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.from_dz}}</view>
+
+<view class='endplace'>
+<image src='../../images/endplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.to_dz}}</view>
+
+<view class='title'>
+<text>车费金额：{{item.ordmey}}</text>
+</view>
+
+<!-- <view class='title'>
+<text>支付时间：{{items.paytime}}</text>
+</view> -->
+
+<!-- <view class='title'>
+<text>订单编号：{{items.orderno}}</text>
+</view> -->
+
+</view>
+</view>
+ 
+
+<!--已取消-->
+<view hidden="{{currentTab!==1}}">
+<view class='finishway' wx:for="{{olist2}}"wx:for-index="index" wx:for-item="item">
+<view class='line'></view>
+<view class='title'>
+<text>{{item.waytype}}</text>
+<view class='learnmore'>查看详情</view>
+</view>
+<view class='timemessage'>
+<image src='../../images/time_fill.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view class='timess'>{{item.sdate_str}}</view>
+</view>
+
+<view class='startplace'>
+<image src='../../images/startplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.from_dz}}</view>
+
+<view class='endplace'>
+<image src='../../images/endplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.to_dz}}</view>
+
+<view class='title'>
+<text>车费金额：{{item.ordmey}}</text>
+</view>
+
+<!-- <view class='title'>
+<text>支付时间：{{items.paytime}}</text>
+</view> -->
+
+<!-- <view class='title'>
+<text>订单编号：{{items.orderno}}</text>
+</view> -->
+
+</view>
+</view>
+ 
+<!--正在进行-->
+<view hidden="{{currentTab!==2}}">
+<view class='finishway' wx:for="{{olist3}}"wx:for-index="index" wx:for-item="item">
+<view class='line'></view>
+<view class='title'>
+<text>{{item.waytype}}</text>
+<view class='learnmore'>查看详情</view>
+</view>
+<view class='timemessage'>
+<image src='../../images/time_fill.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view class='timess'>{{item.sdate_str}}</view>
+</view>
+
+<view class='startplace'>
+<image src='../../images/startplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.from_dz}}</view>
+
+<view class='endplace'>
+<image src='../../images/endplace.png'style="width: 15px; height: 15px; background-color: white;"></image>
+{{item.to_dz}}</view>
+
+<view class='title'>
+<text>车费金额：{{item.ordmey}}</text>
+</view>
+
+<!-- <view class='title'>
+<text>支付时间：{{items.paytime}}</text>
+</view> -->
+
+<!-- <view class='title'>
+<text>订单编号：{{items.orderno}}</text>
+</view> -->
+
+</view>
+</view>

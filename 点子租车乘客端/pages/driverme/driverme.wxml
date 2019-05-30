@@ -1,0 +1,117 @@
+<!--pages/driverme/driverme.wxml-->
+<view class='main'>
+  <view class='reword'>点子出行会妥善保管您的隐私，请放心填写</view>
+  <view class='personmessage'>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>中文姓</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='请输入' style='margin:auto;'  bindinput='insertxin'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>中文名</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='请输入' style='margin:auto;' bindinput='insertming'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>拼音姓</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='拼音' style='margin:auto;text-align:center;'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>拼音名</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='拼音' style='margin:auto;text-align:center;'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>我已确认输入姓名与驾照姓名一致</text>
+      </view>
+      <view class='inputstyle'>
+        <switch checked='false' type='switch' style='margin:auto;zoom:0.5;'></switch>
+      </view>
+    </view>
+  </view>
+
+  <view class='personmessage' style='margin-top:20px;height:140px;'>
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>中国地区（+86）</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='手机号' style='margin:auto;'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>出生日期</text>
+      </view>
+      <view class='inputstyle'>
+        <input placeholder='请选择' style='margin:auto;' bindinput=''></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>邮箱</text>
+      </view>
+      <view class='inputstyle'  style='width:40%;margin-left:37%;'>
+        <input placeholder='用于收取提车单' style='margin:auto;text-align:center;'></input>
+      </view>
+    </view>
+
+    <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>身份证</text>
+      </view>
+      <view class='inputstyle'  style='width:40%;margin-left:37%;'>
+        <input placeholder='购买保险时使用' style='margin:auto;text-align:center;' bindinput='insertcard'></input>
+      </view>
+    </view>
+
+
+      <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>驾驶证</text>
+      </view>
+      <view class='inputstyle'  style='width:40%;margin-left:37%;'>
+        <input placeholder='用来验证是否具备驾驶资格' style='margin:auto;text-align:center;' bindinput='insertjia'></input>
+      </view>
+    </view>
+
+ <view class='span'>
+      <view class='title'>
+        <text style='margin:auto;'>驾驶证类型</text>
+      </view>
+      <view class='inputstyle'  style='width:40%;margin-left:37%;'>
+        <input placeholder='用来验证是否具备驾驶资格' style='margin:auto;text-align:center;' bindinput='inserttype'></input>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <view class='endtap' bindtap='savemessage'>
+    <view style='border-radius: 20px 20px 20px 20px;width:50%;margin-left:25%;background-color:#9ac81f;color:white;display:flex;' >
+      <view style='margin:auto'>保存并使用</view>
+    </view>
+  </view>
+</view>

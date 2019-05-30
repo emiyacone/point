@@ -1,0 +1,30 @@
+<!--pages/personal/personmessage/psm.wxml-->
+<view class='head' bindtap='changehead'>
+<image src='../../images/people_fill.png'style="width: 80px; height: 80px; background-color: white;"></image>
+<view class='headimage'>修改头像</view>
+</view>
+
+<view class='middle'>
+<view class='line l1'></view>
+<view class='message m1'>昵称
+<input  placeholder='起个独特名字吧' ></input>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>性别
+<input  placeholder='请选择自己的性别'></input>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>年龄
+<input  placeholder='多大了'></input>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>车牌号
+<input  placeholder='输入车牌号'></input>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>手机号
+<input  placeholder='1888***888'style='width:80%'></input>
+</view>
+</view>
+
+<view class='end'>完成</view>

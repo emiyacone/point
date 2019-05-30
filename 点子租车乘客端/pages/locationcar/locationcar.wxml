@@ -1,0 +1,57 @@
+<!--pages/locationcar/locationcar.wxml-->
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="20" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+  show-location="true"
+ controls="{{controls}}"
+  hidden='{{maphide}}'>
+ <cover-view class='return'style='margin-top:{{icontop}}px;'bindtap='returnback'>
+  <cover-image src='../images/location.png'style='width:33px;height:33px;margin:8px;'></cover-image>
+  </cover-view>
+   <!-- <cover-view class='reward'>
+  <cover-view class='remessages'>{{remessages}}</cover-view>
+  </cover-view>
+  <cover-view class='endtap'style='margin-top:5%;'>
+<cover-view class='drivermessage'>
+<cover-view class='licence'>
+<cover-view class='licencetitle'>
+<cover-view style='margin-top:2%;'>{{licencetitle}}</cover-view></cover-view>
+<cover-view class='carname'style='color:grey;font-size:12px;margin-left:10%;margin-top:5px;'>{{carname}}</cover-view>
+</cover-view>
+<cover-view class='driverimage'></cover-view>
+<cover-view class='detailmessage'>
+<cover-view class='drivername'style=' text-align: center;'>{{drivername}}</cover-view>
+<cover-view class='star'style='display:flex;'>
+  <cover-image src='../../images/star.png'style='width:13px;height:13px;'></cover-image>
+    <cover-view style='margin-left:2%;width:20px;'>{{star}}</cover-view>
+  <cover-view style='margin-left:5%;color:grey;font-size:13px;width:45px;'> {{odd}}单</cover-view></cover-view>
+<cover-view class='designation'style=' text-align: center;font-size:13px;background-color:grey;color:white;margin-top:5px;'>{{designation}}</cover-view>
+</cover-view>
+</cover-view>
+
+<cover-view class='tips'> 
+<cover-view class='sendmessage'style=' text-align: center;width:33%;'>
+<cover-view style='margin-top:7%;display:flex;margin-left:20%;'>
+ <cover-image src='../../images/tellmessage.png'style='width:16px;height:16px;'></cover-image>
+发消息</cover-view></cover-view>
+<cover-view class='call'style=' text-align: center;width:33%; border-left:0.5px solid #EBEBEB;'>
+<cover-view style='margin-top:7%;display:flex;margin-left:20%;'>
+ <cover-image src='../../images/tel.png'style='width:16px;height:16px;'></cover-image>
+打电话</cover-view></cover-view>
+<cover-view class='contact'style=' text-align: center;width:33%;border-left:0.5px solid #EBEBEB;'>
+<cover-view style='margin-top:7%;display:flex;margin-left:20%;'>
+ <cover-image src='../../images/cha.png'style='width:16px;height:16px;margin-right:2px;'></cover-image>
+取消订单</cover-view></cover-view>
+</cover-view>
+  </cover-view> -->
+  </map>
+  <view class='mapend'>
+  <view class='futuretime'>
+  <view style='font-size:15px;margin:auto;'>预计<text style='color:#9ac81f;'>{{arrivetime}}</text>后到达</view>
+  </view>
+  <view style='border-radius: 20px 20px 20px 20px;width:20%;margin:auto;background-color:#9ac81f;color:white;display:flex;' bindtap='back'>
+  <view style='margin:auto'>返回</view>
+  </view>
+  </view>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personmessage/psm",
+    "pages/testcode/testcode",
+    "pages/cartypetest/cartypetest",
+    "pages/pay/pay",
+    "pages/zuche/special",
+    "pages/login/login",
+    "pages/appraise/appraise",
+    "pages/personal/personal",
+    "pages/journey/endjourney/endjourney",
+    "pages/questions/questions",
+    "pages/advice/advice",
+    "pages/personal/service/service",
+    "pages/driverme/driverme",
+    "pages/inthejourney/inthejourney",
+    "pages/locationcar/locationcar",
+    "pages/contactservice/contactsrevice",
+    "pages/route/special",
+    "pages/cartypes/businesscar/businesscar",
+    "pages/cartypes/cartypes",
+    "pages/payduan/paymoney",
+    "pages/personal/mymoney/mymoney",
+    "pages/test/testpicker",
+    "pages/login/signin/signin",
+    "pages/test/test",
+    "pages/share/share",
+    "pages/paymoney/paymoney",
+    "pages/personal/product/productmanage",
+    "pages/personal/set/set",
+    "pages/personal/mymessage/mymessage",
+    "pages/personal/myway/myway",
+    "pages/logs/logs",
+    "pages/inform/inform",
+    "pages/special/special",
+    "pages/sq/sq",
+    "pages/personal/showmessage/showmessage"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "点子出行",
+    "navigationBarTextStyle": "black"
+  }
+}

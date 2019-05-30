@@ -1,0 +1,41 @@
+<!--pages/login/signin/signin.wxml-->
+<view style='background-color:{{totalcolor}};width:100%;height:100%;'>
+<view class='logintitle'>请输入你的手机号</view>
+
+<view class='loginmessage'>
+  <view class='message'>为了方便联系，请输入常用手机号码</view>
+  <view class='middle'>
+    <view class='middlehead'>手机号</view>
+  </view>
+
+  <view class='phonenumber'>
+
+    <picker class='textloader' bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">
+      <view class="picker">
+        {{area[areaIndex]}}
+      </view>
+    </picker>
+    <input class='inputphone' type='number' maxlength='11'placeholder='请输入手机号码'bindfocus='changecolor'bindblur='changeback'bindinput='phonenumber'hidden='{{inputhide}}'></input>
+  </view>
+
+  <view class='clicksign'>
+<view class='circle'style='background-color:{{circlecolor}}'bindtap='circlechange'>
+ <image src='../../images/circlet.png'style='width:15px;height:15px;margin-left:2px;margin-top:2px'></image>
+</view>
+       <view style='margin-left:10px;'>同意</view>
+    <view class='endtitle1'>《法律声明与隐私政策》</view>
+  </view>
+</view>
+ <view class='loginbutton'style='background-color: {{commcolor}};'bindtap='tendtocode'>
+ <view style='margin-top:-5px;margin-left:37%;'>下一步</view>
+ </view>
+<!-- <view class='end'>已有账号，立即
+  <view class='endtitle'>登录</view>
+</view>   -->
+</view>
+<view class='toast' hidden='{{toasthide}}'>
+<view style='color:grey;font-size:15px;margin-left:29%;margin-top:15px;'>你已注册企业签约司机</view>
+<view style='display:flex;height:25px;width:90px;background-color:#9ac81f;margin-top:12px;font-size:13px;border-radius:5px 5px 5px 5px;color:white;margin-left:38%;'>
+<view style='margin-left:35%;margin-top:2px;'bindtap='tendtopage'>确定</view>
+</view>
+</view>

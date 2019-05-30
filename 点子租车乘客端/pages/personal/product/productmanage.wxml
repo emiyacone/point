@@ -1,0 +1,32 @@
+<!--pages/personal/product/productmanage.wxml-->
+<view class='ownpro'>已有产品</view>
+ <view class='message' wx:for="{{items}}"wx:for-index="index" wx:for-item="items">
+<view data-id='{{index}}' class='tab' style='height:{{items.totalheight}}px;width:100%;background-color:{{items.backgroundcolor}}; margin-top: 5%;'bindtap='clickme'bindblur='changeback'>
+
+<view class='head'>
+ <image src='../../images/promoney.png'style="width: 20px; height: 20px; background-color: white;"></image> 
+ <view class='name'>{{items.name}}</view>
+ <view class='nameweight'>{{items.nameweight}}g</view>
+</view>
+
+ <view class='line'></view>
+<view class='middle'>
+<view class='price'>价格</view>
+<view class='nameprice'>{{items.nameprice}}元/g</view>
+</view>
+
+<view class='sell' hidden='{{items.tipshow}}'>卖出</view>
+ </view>
+ </view>  
+ <view class='buypro'>
+ <view class='bptitle'>购买产品</view>
+<view   class='learnmore'>查看详情</view>
+ </view>
+  <view class='line'></view>
+   <view class='message' wx:for="{{sellpros}}"wx:for-index="index" wx:for-item="sellpros">
+  <view class='protobuy'>
+   <image src='../../images/promoney.png'style="width: 20px; height: 20px; background-color: white;"></image> 
+   <view class='name'>{{sellpros.name}}</view>
+ <view class='nameweight'>{{sellpros.price}}元</view>
+ </view>
+ </view>

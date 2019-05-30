@@ -1,0 +1,114 @@
+/* pages/driver/index/index.wxss */
+.top{
+  width:100%;
+  height:40px;
+  background-color:  #9ac81f;
+  display:flex;
+}
+.message{
+  display:flex;
+  width:100%;
+  height:30px;
+    margin-top: 10px;
+}
+.now{
+  margin-left:7%;
+  border:1px solid #9ac81f;
+  color: #9ac81f;
+  text-align: center;
+height:20px;
+font-size: 12px;
+width:10%;
+}
+.trip{
+  width:100%;
+  height:78px;
+
+}
+.line{
+  width:100%;
+  background-color:#EBEBEB;
+  height:1px;
+}
+.name{
+margin-left: 7%;
+width:20%;
+font-size: 15px;
+margin-top:8px;
+}
+.phone{
+width:50%;
+font-size: 15px;
+margin-top:10px;
+}
+.introduce{
+  margin-left:7%;
+margin-top:-10px;
+font-size:10px;
+color:grey;
+}
+.return{
+  width:50px;
+  height:50px;
+  border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    margin-left: 80%;
+
+}
+.rewardme{
+  height:40px;
+  width:100%;
+  background-color: white;
+  font-size: 15px;
+  display: flex;
+  margin-top: 10px;
+}
+.timelimit{
+  width:100%;
+  height:28px;
+  text-align: center;
+    background-color: white;
+      display: flex;
+      margin-top:20px;
+}
+.button{
+  margin-left:7%;
+  margin-top:5px;
+  width:80%;
+  border-radius: 15px 15px 15px 15px;
+  background-color:  #9ac81f;
+  color:white;
+  text-align: center;
+  height:50px;
+}
+
+.bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+
+.show {
+    border-radius: 10px 10px 10px 10px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 53%;
+  height: 10%;
+  padding: 8px;
+  border: 8px solid #e8e9f7;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  text-align: center
+}

@@ -1,0 +1,13 @@
+/* pages/cartypes/businesscar/businesscar.wxss */
+.title{
+  width:100%;
+  height:30px;
+  background-color: #9ac81f;
+}
+.end{
+  width:100%;
+  height:40px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}

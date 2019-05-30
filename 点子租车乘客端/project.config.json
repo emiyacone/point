@@ -1,0 +1,93 @@
+{
+	"description": "项目配置文件",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wxa601071e2419a510",
+	"projectname": "%E7%82%B9%E5%AD%90%E7%A7%9F%E8%BD%A6%E6%B5%8B%E8%AF%95",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "dengkku",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "test",
+					"pathName": "pages/inthejourney/inthejourney",
+					"query": "oid=36",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的轨迹",
+					"pathName": "pages/personal/myway/myway",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试我的轨迹",
+					"pathName": "pages/personal/myway/myway",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "信息",
+					"pathName": "pages/personal/showmessage/showmessage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "驾驶员信息",
+					"pathName": "pages/driverme/driverme",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+<!--pages/testcode/testcode.wxml-->
+<view class='top'>请输入你的验证码</view>
+<view class='etitle'>验证码已发送到你的手机</view>
+<view class='testcodes'>
+<input type='number' confirm-hold="true" style='width:50px;height:50px;margin:20px;border:1px dotted black;font-size:50px;'maxlength='{{max}}'bindinput="hidetime1"bindblur='cancel1' focus="{{value1_focus}}"></input>
+<input type='number' style='width:50px;height:50px;margin:20px;border:1px dotted black;font-size:50px;'maxlength='{{max}}'bindinput="hidetime2"bindblur='cancel2'  focus="{{value2_focus}}" ></input>
+<input type='number' style='width:50px;height:50px;margin:20px;border:1px dotted black;font-size:50px;'maxlength='{{max}}'bindinput="hidetime3"bindblur='cancel3'  focus="{{value3_focus}}" ></input>
+<input type='number' style='width:50px;height:50px;margin:20px;border:1px dotted black;font-size:50px;'maxlength='{{max}}'bindinput="hidetime4"bindblur='cancel4'  focus="{{value4_focus}}" ></input>
+</view>
+<view class='changetime' hidden='{{timehide}}'>{{time}}s</view>
+<image src='../images/draw.png'style='height:30px;width:30px;margin-left: 80%;'hidden='{{drawhide}}'></image>
+<view class='button'bindtap='nexttip'>
+下一步
+</view>
+<view class='end'>已有帐号，立即
+<view style='color:#9ac81f'bindtap='getlogin'>登录</view>
+</view>

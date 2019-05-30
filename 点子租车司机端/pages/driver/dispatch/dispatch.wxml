@@ -1,0 +1,72 @@
+<!--pages/driver/dispatch/dispatch.wxml-->
+<view class='top'>
+<image src='../../images/driver.png'style="width: 30px; height: 30px; margin-left:10px;margin-top:6px;"></image>
+<view style='width:80%;height:18px;margin-top:5px;color:white;text-align:center;'>调度</view>
+<image src='../../images/bell.png'style="width: 30px; height: 30px;  margin-left:-10px;margin-top:6px;"></image>
+</view>
+<view class='score'>
+<view class='taps'>
+<view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>服务分</view>
+<view style='margin-top:10px;font-size:23px;margin-left:20%;color:#9ac81f'>{{servicescore}}</view>
+</view>
+<view class='taps'style='border-left:0.5px solid #ebebeb'>
+<view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>流水</view>
+<view style='margin-top:10px;font-size:23px;margin-left:20%;color:grey'>{{servicescore}}</view>
+</view>
+<view class='taps'>
+<view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>总结单数</view>
+<view style='margin-top:10px;font-size:23px;margin-left:26%;color:grey'>{{servicescore}}</view>
+</view>
+<view class='taps'>
+<view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>好评数</view>
+<view style='margin-top:10px;font-size:23px;margin-left:20%;color:#ebebeb'>{{servicescore}}</view>
+</view>
+<view class='taps'>
+<view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>上班时长</view>
+<view style='margin-top:10px;font-size:23px;margin-left:26%;color:#ebebeb'>{{servicescore}}</view>
+</view>
+</view>
+<view class='line'></view>
+
+<view style='height:130px;width:100%;'></view>
+<view class='middle'style='width:100%;height:{{middleheight}}px;'>
+<view   style='margin-left:35%;'>
+<image src='../../images/yesno.png'style="width: 80px; height: 80px; margin-left:20px;margin-top:100px;"></image>
+<view style='width:100px;text-align:center;margin-left:10px'>是否呼叫调度</view>
+<view style='display:flex;'>
+<view>
+<image src='../../images/no.png'style="width: 50px; height: 50px; margin-left:-20px;margin-top:6px;"></image>
+<view style='margin-left:-20px;'>挂断</view>
+</view>
+<view>
+<image src='../../images/yes.png'style="width: 50px; height: 50px; margin-left:60px;margin-top:6px;"></image>
+<view style='margin-left:60px;'>免提</view>
+</view>
+</view>
+</view>
+<view style='height:70px;width:100%;'></view>
+</view>
+
+
+
+
+<view class='end'>
+<view class='left'>
+<view  class='setdata'>
+<image src='../../images/setdata.png'style="width: 15px; height: 15px; margin-left:5px;margin-top:6px;"></image>
+</view>
+<view style='font-size:10px;margin-left:5%;'>派单设置</view>
+</view>
+<view class='startj'>
+<view class='circle'>
+<view style='margin-top:24%;margin-left:2%;'>开始派单</view>
+</view>
+</view>
+<view class='left'style='margin-left:27%;'>
+<view  class='setdata'>
+<image src='../../images/manger.png'style="width: 20px; height: 20px; margin-left:3px;margin-top:3px;"></image>
+</view>
+<view style='font-size:10px;margin-left:20%;'>调度</view>
+</view>
+</view>
+

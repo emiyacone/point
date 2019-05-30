@@ -1,0 +1,70 @@
+/* pages/personal/mymoney/mymoney.wxss */
+.head{
+  margin-left:6%;
+}
+.middlef{
+   display: flex;
+  margin-left:6%;
+  margin-top: 2.5%;
+  height:40px;
+  font-size: 12px;
+}
+.mymoney{
+  color:grey;
+}  
+.middles{
+  display: flex;
+  margin-left:6%;
+  margin-top: 2.5%;
+}
+.learnmore{
+  margin-left:68%;
+  font-size: 10px;
+  width:15%;
+  height:19px;
+  border-radius: 20px 20px 20px 20px;
+  color:grey;
+}  
+.line{
+  margin-left:-7%;
+    margin-top:2.5%;
+  background-color:#EBEBEB;
+  height:2px;
+}
+.linedivide{
+  margin-left:4%;
+    margin-top:5%;
+    width:91%;
+  background-color:#EBEBEB;
+  height:1px;
+}
+.middlet{
+  margin-left:6%;
+  margin-top: 1.5%;
+  height:60px;
+  font-size: 12px;
+}
+.ticketmessage{
+  display: flex;
+}
+.myticket{
+  color:grey;
+}  
+.tickettime{
+  margin-top: 2.5%;
+    color:grey;
+}
+.title{
+  margin-left:6%;
+  margin-top: 5%;
+}
+.middlefo{
+   display: flex;
+  margin-left:6%;
+  margin-top: 2.5%;
+  height:50px;
+  font-size: 12px;
+}
+.myscore{
+  color:grey;
+}  

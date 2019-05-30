@@ -1,0 +1,27 @@
+<!--pages/personal/mymoney/mymoney.wxml-->
+
+<view class='head'>余额</view>
+<view class='line'></view>
+<view class='linedivide'></view>
+<view class='middlef'>账户总收入
+<view class='mymoney'>{{mymoney}}元</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+
+<view class='linedivide'></view>
+<view class='middlef'>已收现金
+<view class='mymoney'>{{mymoney}}元</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+
+<view class='linedivide'></view>
+<view class='middlef'>可提现金额
+<view class='mymoney'>{{mymoney}}元</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+<view class='line'></view>
+
+<view class='head' style='margin-top:10px;'>交易明细</view>
+<view class='linedivide'></view>
+
+

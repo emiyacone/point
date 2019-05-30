@@ -1,0 +1,80 @@
+/* pages/personal/myway/myway.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: black;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  right: 0;
+  height: 4rpx;
+  width:15%;
+  background: #9AC81F;
+}
+.title{
+  margin-top: 5%;
+  display: flex;
+  font-size: 14px;
+}
+.learnmore{
+  width:24%;
+  margin-left: 60%;
+  color:black;
+  background-color: #EBEBEB;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  font-size: 12px;
+}
+.finishway{
+  margin-top: 5%;
+  margin-left:7%;
+  background-color: white;
+  height:130px;
+  width: 88%;
+}
+.line{
+  margin-left:-7%;
+    margin-top:2.5%;
+  background-color:#EBEBEB;
+  height:1px;
+}
+.timemessage{
+  margin-top:2.5%;
+  display:flex;
+  color:grey;
+  font-size: 12px;
+}
+.startplace{
+   margin-top:2.5%;
+   color:grey;
+   font-size: 12px;
+}
+.endplace{
+   margin-top:2.5%;
+     color:grey;
+     font-size: 12px;
+}
+.timess{
+  margin-left:4%;
+}
+.total{
+  background-color:#EEEEEE;
+}

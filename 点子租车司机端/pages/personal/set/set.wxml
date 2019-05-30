@@ -1,0 +1,14 @@
+<!--pages/personal/set/set.wxml-->
+<view class='main'>
+<view class='message' wx:for="{{items}}"wx:for-index="index" wx:for-item="items">
+<view class='total'>
+<view class='title'>
+{{items.message}}
+</view>
+<view class='tendto'>
+ <image src='../../images/enter.png'style="width: 15px; height: 15px; background-color: white;"></image> 
+ </view>
+</view>
+</view>
+</view>
+<view class='end'>退出登录</view>

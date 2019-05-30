@@ -1,0 +1,39 @@
+{
+  "pages": [
+      "pages/special/special",
+    "pages/driver/index/index",
+    "pages/sq/sq",
+    "pages/login/login",
+    "pages/login/signin/signin",
+    "pages/personal/personal",
+    "pages/driver/confirm/confirm",
+    "pages/personal/mymoney/mymoney",
+    "pages/driver/indexpage/indexpage",
+    "pages/driver/allorders/allorders",
+    "pages/advice/advice",
+    "pages/index/index",
+    "pages/driver/dispatch/dispatch",
+    "pages/driver/setdata/setdata",
+    "pages/share/share",
+    "pages/testcode/testcode",
+    "pages/questions/questions",
+    "pages/personal/product/productmanage",
+    "pages/personal/service/service",
+    "pages/personal/set/set",
+    "pages/personal/mymessage/mymessage",
+    "pages/personal/myway/myway",
+    "pages/personal/personmessage/psm"
+  ],
+"permission": {
+  "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序"
+  }
+},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "点子出行",
+    "navigationBarTextStyle": "black"
+  }
+ 
+}

@@ -1,0 +1,20 @@
+<!--pages/pay/pay.wxml-->
+<view>
+  <text style='margin-left:10%;'>账单选择</text>
+</view>
+<view class='main'>
+  <view class='payway'>
+    <!-- <view class='way' style='background-color:{{personcolor}}'  bindtap='changecolorperson'>
+      <image src='../images/moneyticket.png' class='way'  style='width:40px;height:40px;  margin:10px 20px;border-radius:20px 20px 20px 20px;'></image>
+         <view style='margin:0px 30rpx;'>个人</view>
+    </view> -->
+    <view class='way' style='background-color:{{induscolor}}'  bindtap='changecolorindus'>
+      <image src='../images/moneyticket.png' class='way' style='width:40px;height:40px; margin:10px 20px;border-radius:20px 20px 20px 20px;'></image>
+          <view style='margin:0px 30rpx;'>企业</view>
+    </view>
+  </view>
+
+  <view class='submit' bindtap='submit'>
+    <text>提交支付</text>
+  </view>
+</view>

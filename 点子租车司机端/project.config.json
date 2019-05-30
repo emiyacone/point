@@ -1,0 +1,30 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"cloudfunctionRoot": "cloudfunctions/",
+	"compileType": "miniprogram",
+	"libVersion": "2.2.3",
+	"appid": "wxe9a6feec02b596f2",
+	"projectname": "%E5%8F%B8%E6%9C%BA%E7%AB%AF",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

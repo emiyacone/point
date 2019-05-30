@@ -1,0 +1,32 @@
+/* pages/personal/set/set.wxss */
+.total{
+  width:100%;
+  height:50px;
+  display: flex;
+ border-top: 2px solid #EBEBEB;
+ border-radius: 5px 5px 5px 5px;
+  margin-top:3%;
+  background-color: white;
+}
+.title{
+  margin-top: 3%;
+  margin-left: 3%;
+   width:89%;
+   height:30px;
+}
+.tendto{
+    margin-top: 5%;
+}
+.main{
+width:100%;
+height:100%;
+background-color: #F8F8F8;
+}
+.end{
+  margin-top: 77%;
+  text-align: center;
+  color: white;
+  background-color:#9AC81F;
+  width:100%;
+  height:33px;
+}

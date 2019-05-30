@@ -1,0 +1,2 @@
+<button bindtap='common'>普通用户</button>
+<button bindtap='special'>签约企业</button>

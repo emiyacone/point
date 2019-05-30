@@ -1,0 +1,75 @@
+/* pages/personal/product/productmanage.wxss */
+.tab{
+   border-top: 2px solid #EBEBEB;
+ border-radius: 5px 5px 5px 5px;
+}
+.head{
+    margin-top: 5%;
+  margin-left:5%;
+  display: flex;
+}
+.name{
+  margin-top: -1.5%;
+  margin-left:3%;
+  width:60%;
+  font-size: 15px;
+}
+.nameweight{
+    margin-top: -1.5%;
+  margin-left: 5%;
+  color:grey;
+    font-size: 15px;
+}
+.middle{
+  display: flex;
+}
+.price{
+    margin-top: 3%;
+    margin-left:12%;
+  width:60%;
+    font-size: 15px;
+}
+.nameprice{
+    margin-top: 3%;
+    margin-left: 0%;
+    color: grey;
+      font-size: 15px;
+}
+.line{
+    margin-top: 3%;
+    width:85%;
+   margin-left:5%;
+  background-color:grey;
+  height:1px;
+}
+.sell{
+  margin-top:5%;
+  text-align: center;
+  border:1px solid black;
+  width:20%;
+  margin-left: 40%;
+  border-radius: 30px 30px 30px 30px;
+    font-size: 13px;
+}
+.bptitle{
+width:80%;
+margin-top:4%;
+margin-left:3%;
+}
+.learnmore{
+  font-size: 12px;
+  margin-top:4%;
+}
+.buypro{
+display:flex;
+border-top: 2px solid #EBEBEB;
+ border-radius: 5px 5px 5px 5px;
+}
+.ownpro{
+  margin-left:3%;
+}
+.protobuy{
+  display: flex;
+  margin-top: 4%;
+  margin-left:5%;
+}

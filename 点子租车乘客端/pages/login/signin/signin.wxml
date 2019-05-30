@@ -1,0 +1,32 @@
+<!--pages/login/signin/signin.wxml-->
+<view class='logintitle'>请输入你的手机号</view>
+
+<view class='loginmessage'>
+  <view class='message'>为了方便联系，请输入常用手机号码</view>
+  <view class='middle'>
+    <view class='middlehead'>手机号</view>
+  </view>
+
+  <view class='phonenumber'>
+
+    <picker class='textloader' bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">
+      <view class="picker">
+        {{area[areaIndex]}}
+      </view>
+    </picker>
+    <input class='inputphone' type='number' maxlength='11'bindfocus='changecolor'bindblur='changeback'bindinput='phonenumber'></input>
+  </view>
+
+  <view class='clicksign'>
+<view class='circle'style='background-color:{{circlecolor}}'bindtap='circlechange'>
+ <image src='../../images/circlet.png'style='width:15px;height:15px;margin-left:2px;margin-top:2px'></image>
+</view>
+           是否匿名同意
+    <view class='endtitle1'>《法律声明与隐私政策》</view>
+  </view>
+
+</view>
+<view class='loginbutton'style='background-color: {{commcolor}};'bindtap='tendtocode'>下一步</view>
+<view class='end'>已有账号，立即
+  <view class='endtitle'>登录</view>
+</view>

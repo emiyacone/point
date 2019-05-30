@@ -1,0 +1,43 @@
+<view class='return'>
+<view class='title'>
+  <image src='../images/xicon.png'style='width:33px;height:33px;margin:8px;'></image>
+<view style='margin-top:4%;margin-left:33%;'>评价</view>
+</view>
+<view class='middle' bindtap='suggest'>
+<view class='star' >
+  <image id='1'src='{{sstar1}}'style='width:33px;height:33px;margin:8px;margin-left:20%;'bindtap='select1'></image>
+  <image id='2'src='{{sstar2}}'style='width:33px;height:33px;margin:8px;'bindtap='select2'></image>
+    <image id='3'src='{{sstar3}}'style='width:33px;height:33px;margin:8px;'bindtap='select3'></image>
+      <image id='4'src='{{sstar4}}'style='width:33px;height:33px;margin:8px;'bindtap='select4'></image>
+        <image id='4'src='{{sstar5}}'style='width:33px;height:33px;margin:8px;'bindtap='select5'></image>
+  </view>
+  <view style='text-align:center;font-size:15px;'>{{may}}</view>
+</view>
+<!-- <view class='end'bindtap='suggest'>
+<view style='margin-top:6%;'>请输入你的意见或建议</view>
+</view> -->
+
+<view class='fend'>
+<view class='icons'style='display:flex;'>
+<view  class='bordericon' style='margin-left:15%;background-color:{{firstcolor}}' bindtap='changefirst'>
+<view style='margin-top:40%;'>车不干净</view>
+</view>
+<view class='bordericon' style='background-color:{{secondcolor}}' bindtap='changesecond'>
+<view style='margin-top:40%;'>乱停乱放</view>
+</view>
+<view class='bordericon' style='background-color:{{thirdcolor}}' bindtap='changethird'>
+<view style='margin-top:40%;'>超速</view>
+</view>
+<view class='bordericon'  style='background-color:{{fourcolor}}' bindtap='changefour'>
+<view style='margin-top:40%;'>车牌不符</view>
+</view>
+</view>
+
+<view class='advice'>
+<input  placeholder='其它想说的直接发送给司机' placeholder-style='margin:5px 20%;color:grey;font-size:12px;'/>
+</view>
+<view class='endtitle' bindtap='gettofirst'>
+<view style='margin-top:3%;'>匿名提交</view>
+</view>
+</view>
+  </view>

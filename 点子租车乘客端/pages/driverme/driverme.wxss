@@ -1,0 +1,55 @@
+/* pages/driverme/driverme.wxss */
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.reword {
+  width: 90%;
+  margin-left: 10%;
+  height: 30px;
+  color: grey;
+  font-size: 10px;
+}
+
+.personmessage {
+  width: 88%;
+  height: 233px;
+  margin-left: 6%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.span {
+  width: 100%;
+  height: 45px;
+  display: flex;
+    border: 0.5px solid #EBEBEB;
+}
+
+.title {
+  width: 20%;
+  height: 35px;
+  font-size: 15px;
+  color: #747675;
+  display: flex;
+white-space:nowrap;
+}
+
+.inputstyle {
+  width: 20%;
+  height: 35px;
+  margin-left: 60%;
+  font-size: 15px;
+  color: #747675;
+    display: flex;
+}
+
+.endtap{
+  width:100%;
+  height:40px;
+  display: flex;
+  position: fixed;
+  bottom: 30rpx;
+}

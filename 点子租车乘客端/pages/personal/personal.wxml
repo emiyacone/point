@@ -1,0 +1,77 @@
+<!--pages/personal/personal.wxml-->
+<!-- 头像，号码，普通用户 -->
+<view class='total'>
+  <view class='head'>
+    <view class='headimage'>
+      <image src='{{userInfo.avatarUrl}}' style="width: 80px; height: 80px; background-color: white;border-radius:80px 80px 80px 80px;"></image>
+    </view>
+    <view class='phone'>{{uphone}}</view>
+    <view class='limit'>
+      <image src='../images/star.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='margin-top:0%;margin-left:2%;font-size:12px;'>{{utype==0?'企业用户':'普通用户'}}</view>
+      <image src='../images/enter.png' style="width: 12px; height: 12px; background-color: white;margin-top:1%;margin-left:2%;"></image>
+    </view>
+  </view>
+
+  <!-- 功能 -->
+  <view class='middle' style>
+    <view class="divLine"></view>
+    <view class='selection s1' bindtap='personal'>
+      <image src='../images/personmessage.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>个人资料</view>
+      <view class='tendto t1'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+    </view>
+    <view class="divLine"></view>
+    <view class='selection s2' bindtap='myway'>
+      <image src='../images/walk.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>我的行程</view>
+      <view class='tendto t2'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+    </view>
+       <view class="divLine"></view>
+    <view class='selection s4' bindtap='mymessage'>
+      <image src='../images/message.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>消息中心</view>
+      <view class='tendto t4'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+    <view bindtap='share'>
+    <button  class='s5' open-type='share' bindtap='share'>
+      <image src='../images/share.png' style="margin-left:50rpx;margin-top:10rpx;width: 20px; height: 20px; background-color: white;margin-top:10rpx;"></image>
+      <view style='margin-left:30rpx;margin-top:10rpx;'>分享</view>
+      <view class='tendto t5'>
+        <image src='../images/enter.png' style="margin-left:60rpx;margin-top:10rpx;width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+      </button>
+    </view>
+   <view class="divLine"></view>
+    <view class='selection s6' bindtap='setto'>
+      <image src='../images/set.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>设置</view>
+      <view class='tendto t6'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+    </view>
+   <view class="divLine"></view>
+    <view class='selection s7' bindtap='service'>
+      <image src='../images/kservice.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>客户服务</view>
+      <view class='tendto t7'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view>
+    </view>
+      <view class="divLine"></view>
+    <!-- <view class='selection s8' bindtap='product'>
+      <image src='../images/wallet.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      <view style='width:30%;margin-left:5%;'>产品管理</view>
+      <view class='tendto t8'>
+        <image src='../images/enter.png' style="width: 20px; height: 20px; background-color: white;"></image>
+      </view> 
+    </view>-->
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/personal/mymessage/mymessage.wxml-->
+<view class='message' wx:for="{{items}}"wx:for-index="index" wx:for-item="items">
+<view class='total'>
+<image src='{{items.logoimage}}'style="width: 35px; height: 30px; background-color: white;margin-left:5%;margin-top:3%"></image>
+<view class='middle'>
+<view class='title'>{{items.title}}</view>
+<view class='detailmessage'>{{items.detailmessage}}</view>
+</view>
+<view class='messagetime'>{{items.time}}</view>
+</view>
+<view class='line'></view>
+</view>
+
+<view class='oldmessage'>历史消息
+ <image src='../../images/enter.png'style="width: 15px; height: 15px; background-color: white;"></image> 
+</view>

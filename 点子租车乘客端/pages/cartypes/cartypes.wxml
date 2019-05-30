@@ -1,0 +1,20 @@
+<!--pages/cartypes/cartypes.wxml-->
+<view class="navbar">
+  <view class='usrimage' bindtap='topersonal'>
+    <image src='../images/peopleface.png' style="width: 30px; height: 30px; background-color: white;margin-left:10px;margin-top:5px;"></image>
+  </view>
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap" style='font-size:17px;'>{{item}}</text>
+</view>
+<view class='main'>
+<view wx:for="{{cartypes}}" wx:for-index="index" wx:for-item="cartypes" >
+<view class='cartype' bindtap='tobusinesscar' id='{{cartypes.id}}' >
+<image src='https://dianzichuxings.aptdev.cn/{{cartypes.timg}}'style='width:80px;height:55px;margin:7.5px 10px;'></image>
+<view id='{{cartypes.id}}' style='margin:auto'>{{cartypes.cartypename}}</view>
+<view style='margin:auto'>
+        <view style='border:1px solid #EBEBEB;width:50px;text-align:center; border-radius: 5px 5px 5px 5px;'>
+          {{cartypes.zwnum}}座
+        </view>
+      </view>
+</view>
+</view>
+</view>

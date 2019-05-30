@@ -1,0 +1,36 @@
+/* pages/personal/mymessage/mymessage.wxss */
+.total{
+  margin-top:5%;
+  display:flex;
+    height:60px;
+}
+.title{
+  font-size: 15px;
+
+}
+.middle{
+    margin-left: 5%;
+  width:60%;
+}
+.detailmessage{
+  margin-top: 5%;
+  font-size: 12px;
+ color:grey;
+}
+.messagetime{
+  margin-left: 7%;
+  font-size: 12px;
+}
+.line{
+  width:100%;
+  background-color:#EBEBEB;
+  height:1px;
+}
+.oldmessage{
+  display: flex;
+  font-size: 12px;
+  color:grey;
+  width:40%;
+  margin-left:39%;
+  margin-top:3%;
+}

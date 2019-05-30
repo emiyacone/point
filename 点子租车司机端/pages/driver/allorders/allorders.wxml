@@ -1,0 +1,63 @@
+<!--pages/driver/indexpage/indexpage.wxml-->
+<view class='top'>
+  <image src='../../images/driver.png' style="width: 30px; height: 30px; margin-left:10px;margin-top:6px;" bindtap='persontab'></image>
+  <view style='width:80%;height:18px;margin-top:5px;color:white;text-align:center;'>历史订单</view>
+  <image src='../../images/bell.png' style="width: 30px; height: 30px;  margin-left:-10px;margin-top:6px;"></image>
+</view>
+<view class='score'>
+  <view class='taps'>
+    <view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>服务分</view>
+    <view style='margin-top:10px;font-size:23px;margin-left:20%;color:#9ac81f'>{{servicescore}}</view>
+  </view>
+  <view class='taps' style='border-left:0.5px solid #ebebeb'>
+    <view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>流水</view>
+    <view style='margin-top:10px;font-size:23px;margin-left:20%;color:grey'>{{servicescore}}</view>
+  </view>
+  <view class='taps'>
+    <view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>总结单数</view>
+    <view style='margin-top:10px;font-size:23px;margin-left:26%;color:grey'>{{servicescore}}</view>
+  </view>
+  <view class='taps'>
+    <view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>好评数</view>
+    <view style='margin-top:10px;font-size:23px;margin-left:20%;color:#ebebeb'>{{servicescore}}</view>
+  </view>
+  <view class='taps'>
+    <view style='margin-top:10px;font-size:12px;margin-left:20%;color:grey;'>上班时长</view>
+    <view style='margin-top:10px;font-size:23px;margin-left:26%;color:#ebebeb'>{{servicescore}}</view>
+  </view>
+</view>
+<view class='line'></view>
+
+<view style='height:130px;width:100%;'></view>
+<view class='middle' style='width:100%;height:{{middleheight}}px;'>
+
+  <view style='margin-left:5%;margin-top:10px;'>已完成订单</view>
+  <view class='message' wx:for="{{items}}" wx:for-index="index" wx:for-item="items">
+    <view style='display:flex;margin-top:10px;' bindtap='todetail' id='{{items.id}}'>
+      <view style='margin-left:5%;height:20px;width:40px;font-size:12px;text-align:center;'>
+        <image src='../../images/timeso.png' class='imagetitle'></image>
+      </view>
+      <view style='color:grey;font-size:15px;margin-left:5px;width:60%;' hidden='{{items.titlehide}}'>{{items.time}}的订单</view>
+      <view style='color:grey;font-size:15px;width:18%;' hidden='{{items.titlehide}}'>已完成</view>
+      <view style='color:grey;font-size:15px;margin-left:25%;width:55%;' hidden='{{items.futurehide}}'>请在明天{{items.time}}前到达上车点</view>
+      <image src='../../images/changet.png' style="width: 15px; height: 15px;margin-left:5px;margin-top:5px;"></image>
+    </view>
+
+
+    <view class='trip' bindtap='todetail' id='{{items.id}}'>
+      <view style='margin-left:5%;display:flex;'>
+        <image src='../../images/tentoc.png' style="width: 20px; height: 20px;  margin:5px 7px;"></image>
+        <view style='margin-left:10px;'>{{items.startplace}}</view>
+      </view>
+      <image src='../../images/down.png' style="width: 15px; height: 12px;  margin:5px 30px;"></image>
+      <view style='margin-left:5%;display:flex;'>
+        <image src='../../images/circle.png' style="width: 20px; height: 20px;  margin:0px 7px;"></image>
+        <view style='margin-left:10px;margin-top:-7px;'>{{items.endplace}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+

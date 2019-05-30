@@ -1,0 +1,19 @@
+<!--pages/contactservice/contactsrevice.wxml-->
+<view class='dzbutton'>
+<view style='margin:auto;font-size:14px;width:30%;display:flex;'>
+<image src='../images/mes.png' style='width:15px;height:15px;margin:auto;'></image>
+联系司机
+</view>
+</view>
+<view class='dzbutton'>
+<view style='margin:auto;font-size:14px;width:30%;display:flex;'>
+<image src='../images/mes.png' style='width:15px;height:15px;margin:auto;'></image>
+联系客服
+</view>
+</view>
+
+  <view class='endtap'>
+  <view style='border-radius: 20px 20px 20px 20px;width:30%;margin-left:35%;background-color:#9ac81f;color:white;display:flex;' bindtap='back'>
+  <view style='margin:auto'>返回</view>
+  </view>
+  </view>

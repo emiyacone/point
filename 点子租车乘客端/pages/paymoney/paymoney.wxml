@@ -1,0 +1,47 @@
+<!--pages/paymoney/paymoney.wxml-->
+<view class='main'>
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="14" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+ bindregionchange="regionchange"
+ controls="{{controls}}"
+   polyline="{{polyline}}"
+  hidden='{{maphide}}'>
+  <cover-view class='return'style='margin-top:{{icontop}}px;'>
+  <cover-image src='../images/location.png'style='width:33px;height:33px;margin:8px;'></cover-image>
+  </cover-view>
+    <cover-view class='taketicket'>预计费用：{{total}}元</cover-view>
+  <!-- <cover-view class='personrole'>
+  <cover-view class='title'>温馨提示：{{changetitle}}</cover-view>
+
+  </cover-view> -->
+  <cover-view class='main'>
+  <cover-view style='margin-left:5%;margin-top:5%'>请选择支付方式</cover-view>
+  <cover-view class='line'></cover-view>
+<cover-view class='payway'>
+<cover-view style='margin-left:10%;'>
+  <cover-image src='../images/wechatfriend.png'style='width:50px;height:50px;margin:20px;'></cover-image>
+<cover-view class='paytitle'>微信</cover-view>
+</cover-view>
+<cover-view>
+  <cover-image src='../images/money.png'style='width:50px;height:50px;margin:20px;'></cover-image>
+<cover-view class='paytitle'>现金</cover-view>
+</cover-view>
+<cover-view>
+  <cover-image src='../images/tax.png'style='width:50px;height:50px;margin:20px;'></cover-image>
+<cover-view class='paytitle'style='margin-left:10%;'>第三方支付</cover-view>
+</cover-view>
+</cover-view>
+
+  <cover-view class='end'>
+  <cover-view style='margin-top:2%;' bindtap='clickorder'>确认支付</cover-view>
+  </cover-view>
+  </cover-view>
+  </map>
+  <!-- <modal hidden="{{hiddenmodalput}}" confirm-text="继续等待" cancel-text="取消订单" bindcancel="cancel" bindconfirm="confirm">
+                <image src='../../images/icon.png'style='width: 60px; height: 60px; background-color: white;margin-left:40%'></image>
+                <view style='margin-left:20%;'>亲，再等会，司机马上驾到</view>
+</modal> -->
+  </view>

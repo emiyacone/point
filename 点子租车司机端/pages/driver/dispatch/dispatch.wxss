@@ -1,0 +1,73 @@
+/* pages/driver/dispatch/dispatch.wxss */
+.top{
+  position:fixed;
+  width:100%;
+  height:40px;
+  background-color:  #9ac81f;
+  display:flex;
+}
+.score{
+  position:fixed;
+  height:80px;
+  width:100%;
+  display: flex;
+  margin-top:40px;
+  background-color: white;
+
+}
+.taps{
+  height:70px;
+  width:25%;
+}
+.line{
+    position:fixed;
+  width:100%;
+  height: 10px;
+  background-color:#F0F0F0;
+   margin-top:120px;
+}
+.end{
+position:fixed;
+  width:100%;
+  height: 50px;
+  display: flex;
+  background-color: white;
+}
+.startj{
+height:70px;
+width:70px;
+border-radius: 70px 70px 70px 70px;
+margin-top: -4.5%;
+margin-left: 25%;
+background-color: white;
+}
+.circle{
+height:55px;
+width:55px;
+border-radius: 55px 55px 55px 55px;
+margin-top: 4%;
+margin-left: 4.5%;
+font-size: 12px;
+background-color: #9ac81f;
+color:white;
+display:flex;
+}
+.left{
+  height: 50px;
+  width:15%;
+  margin-left: 3%;
+}
+.setdata{
+height:25px;
+width:25px;
+border-radius: 25px 25px 25px 25px;
+font-size: 10px;
+background-color: grey;
+margin-left: 20%;
+margin-top:10%;
+}
+.trip{
+  width:100%;
+  height:78px;
+margin-top:10px;
+}

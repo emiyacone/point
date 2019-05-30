@@ -1,0 +1,29 @@
+<!--pages/share/share.wxml-->
+<view class='top'>
+<view class='center' >
+  <image src='../images/wechatfriend.png'style='width:150px;height:150px;margin:20px;margin-top:30%;margin-left:30%;'></image>
+  <view style='margin-left:39%;width:100%;'>点子出行</view>
+</view>
+</view>
+ <view class='main'>
+<view class='payway'>
+<view style='margin-left:15%;'>
+  <image src='../images/wechatfriend.png'style='width:50px;height:50px;margin:20px;'></image>
+<view class='paytitle'>微信好友</view>
+</view>
+<view>
+  <image src='../images/friend.png'style='width:50px;height:50px;margin:20px;'></image>
+<view class='paytitle'>微信好友</view>
+</view>
+<view>
+  <image src='../images/flash.png'style='width:50px;height:50px;margin:20px;'></image>
+<view class='paytitle'style='margin-left:25%;'>刷新</view>
+</view>
+</view>
+
+  <view class='end'>
+  <view style='margin-top:2%;' bindtap='cancelorder'>取消</view>
+  </view>
+  </view>
+
+

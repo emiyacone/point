@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class='logintitle'>欢迎登录点子出行</view>
+<view class='loginmessage'>
+<input class='inputid' type='number' placeholder='请输入账号'maxlength='11' bindinput='getphone'></input>
+<view class='middle'>
+<input class='inoutpsw'  type='password' placeholder='请输入密码' bindinput='getpassword'></input>
+<!-- <view class='gettest'style='background-color:{{tbcolor}}'bindtap='timecount'>
+<view hidden='{{mhide}}'>{{message}}</view>
+<view hidden='{{thide}}'>{{time}}s</view>
+</view> -->
+</view>
+<view class='loginbutton'style='background-color:{{lbcolor}}'>
+<button type='primary' open-type="getUserInfo" bindtap='bindGetUserInfo'>登录</button>
+</view>
+</view>
+<view class='end'>点击登录表示同意
+  <view class='endtitle' >《用户条款》</view>
+</view>
+
+

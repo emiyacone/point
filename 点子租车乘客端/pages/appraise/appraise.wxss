@@ -1,0 +1,51 @@
+/* pages/appraise/appraise.wxss */
+.return{
+  width:100%;
+  background-color: white;
+}
+.title{
+  display: flex;
+  height: 55px;
+  font-size: 23px;
+}
+.middle{
+  height: 80px;
+border-top: 0.5px solid #ebebeb;
+}
+.star{
+  display: flex;
+}
+.end{
+  text-align: center;
+  font-size: 18px;
+  border-top: 0.5px solid #ebebeb
+}
+.fend{
+  height:180px;
+  border-top: 0.5px solid #ebebeb
+}
+.endtitle{
+  width:50%;
+  height:30px;
+  margin-left:25%;
+  text-align: center;
+  background-color: #9ac81f;
+  color:white;
+  margin-top:10%;
+}
+.advice{
+  width: 90%;
+  margin:10px 5%;
+  height:30px;
+  background-color: #ebebeb;
+  border-radius: 5px 5px 5px 5px;
+}
+.bordericon{
+  margin:10px;
+  width:50px;
+  height:50px;
+  border-radius:50px 50px 50px 50px;
+  border:0.5px solid #ebebeb;
+  font-size:11px;
+  text-align:center;
+}

@@ -1,0 +1,15 @@
+<!--pages/cartypes/businesscar/businesscar.wxml-->
+<view class='title'>
+<view style='margin:auto;color:white;text-align:center;'>详情页</view>
+</view>
+<view>
+<image src='../../images/GL8.jpg'></image>
+</view>
+
+<view style='margin-left:5%;'>品牌：别克GL8</view>
+<view style='margin-left:5%;'>座位数：7-8</view>
+ <view class='end'style='margin-top'>
+ <image src='../../images/callonce.png' style='width:30px;height:30px;margin-left:10px;margin-top:5px;'></image>
+ <view style='width:50%;height:30px;margin-left:10px;margin-top:10px;'>133****8233</view>
+ <view style='width:23%;height:30px;margin-left:10px;margin-top:5px;text-align:center;background-color:#9ac81f;border-radius: 5px 5px 5px 5px;color:white;'>立即拨打</view>
+ </view>

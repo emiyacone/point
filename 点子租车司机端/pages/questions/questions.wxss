@@ -1,0 +1,57 @@
+/* pages/questions/questions.wxss */
+.top{
+  height:90px;
+  background-color: #F8F8F8;
+  width:100%;
+  display: flex;
+}
+.putquestions{
+margin-top: 30px;
+margin-left: 50px;
+border-radius: 10px 10px 10px 10px;
+width:100px;
+height:26px;
+}
+.myquestions{
+margin-top: 30px;
+margin-left: 50px;
+border-radius: 10px 10px 10px 10px;
+width:100px;
+height:26px;
+}
+.nexto {
+  position: relative;
+  width: 90%;
+  margin-left:5%;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #9ac81f;
+  /* border-radius: 0px 0px 10px 10px; */
+  }
+  .questiontype{
+    display: flex;
+    margin-top:5%;
+    margin-left:5%;
+  }
+  .title{
+    width:80%;
+  }
+  .line{
+    height:1px;
+    width:90%;
+    margin-left: 5%;
+    margin-top:5%;
+    background-color: grey;
+  }
+  .chooseimage{
+    height:100px;
+    width:100px;
+    border: 1px solid black;
+    margin-left:5%;
+  }
+  .main{
+border-radius: 10px 10px 0px 0px;
+border-top: 2px solid #EAEAEA;
+border-left: 1px solid #EAEAEA;
+  }

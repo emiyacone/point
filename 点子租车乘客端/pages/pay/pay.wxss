@@ -1,0 +1,39 @@
+/* pages/pay/pay.wxss */
+.main{
+  width:100%;
+}
+.payway{
+  width:80%;
+  margin-left:10%;
+  margin-top: 10px;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+
+}
+.paywaytitle{
+  width:80%;
+  margin-left:10%;
+  margin-top: 10px;
+  display: flex;
+}
+.way{
+  margin:20px auto;
+  width:80px;
+  border-radius: 5px 5px 5px 5px;
+}
+.waytitle{
+  margin:0px auto;
+  width:80px;
+}
+.submit{
+  height:30px;
+  width:80%;
+  background-color: #9ac81f;
+  margin:10px auto;
+  text-align: center;
+border-radius: 5px 5px 5px 5px;
+color:white;
+font-size: 33rpx;
+padding-top: 10rpx;
+
+}

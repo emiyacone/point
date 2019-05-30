@@ -1,0 +1,36 @@
+<!--pages/locationcar/locationcar.wxml-->
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="20" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+  show-location="true"
+ controls="{{controls}}"
+  hidden='{{maphide}}'>
+  <cover-view class='return' style='margin-top:{{icontop}}px;' bindtap='returnback'>
+    <cover-image src='../images/location.png' style='width:33px;height:33px;margin:8px;'></cover-image>
+  </cover-view>
+  <cover-view class='box'>
+    <cover-view class='drive'>
+      <cover-view class='licence'>
+        <cover-view class='licencetitle'>
+          <cover-view style='margin-top:2%;'>{{licencetitle}}</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class='driverimage'></cover-view>
+      <cover-view class='detailmessage'>
+        <cover-view class='drivername' style=' text-align: center;'>{{drivername}}</cover-view>
+        <cover-view class='star' style='display:flex;'>
+          <cover-image src='../images/star.png' style='width:13px;height:13px;'></cover-image>{{star}}
+          </cover-view>
+      </cover-view>
+  </cover-view>
+  <cover-view class='money'>
+    <cover-view class='moneycss'>￥{{money}}元</cover-view>
+  </cover-view>
+  <cover-view class='pay' bindtap='back'>
+<cover-view class='paycss'>返回</cover-view>
+  </cover-view>
+  </cover-view>
+  </map>
+

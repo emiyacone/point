@@ -1,0 +1,19 @@
+<!--pages/locationcar/locationcar.wxml-->
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ scale="16" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+  show-location="true"
+   polyline="{{polyline}}"
+ controls="{{controls}}"
+  hidden='{{maphide}}'>
+ <cover-view class='return'style='margin-top:{{icontop}}px;'bindtap='returnback'>
+  <cover-image src='../images/location.png'style='width:33px;height:33px;margin:8px;'></cover-image>
+  </cover-view>
+  </map>
+  <view class='mapend'>
+  <view style='border-radius: 20px 20px 20px 20px;width:20%;margin:auto;background-color:#9ac81f;color:white;display:flex;' bindtap='back'>
+  <view style='margin:auto'>返回</view>
+  </view>
+  </view>

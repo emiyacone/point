@@ -1,0 +1,133 @@
+<!--pages/driver/setdata/setdata.wxml-->
+<view class='top'style='display:flex;height:60px;'>
+<view class='first'>
+<view class='circle'style='background-color: {{topcolorfi}};margin-left:15%;'>
+<view style='margin-top:28%;margin-left:33%;'>1</view>
+</view>
+<view style='margin-top:5px;color:{{colorfi}};'>资料填写</view>
+</view>
+<image src='../../images/right.png'style="width: 30px; height: 30px; margin-left:5px;margin-top:2px;"></image>
+<view class='first'>
+<view class='circle'style='background-color: {{topcolorse}};margin-left:15%;'>
+<view style='margin-top:28%;margin-left:33%;'>2</view>
+</view>
+<view style='margin-top:5px;color:{{colorse}};'>信息上传</view>
+</view>
+<image src='../../images/right.png'style="width: 30px; height: 30px; margin-left:5px;margin-top:2px;"></image>
+<view class='first'>
+<view class='circle'style='background-color: {{topcolorth}};margin-left:15%;'>
+<view style='margin-top:28%;margin-left:33%;'>3</view>
+</view>
+<view style='margin-top:5px;color:{{colorth}};'>资质审核</view>
+</view>
+<image src='../../images/right.png'style="width: 30px; height: 30px; margin-left:5px;margin-top:2px;"></image>
+<view class='first'>
+<view class='circle'style='background-color: {{topcolorfo}};margin-left:15%;'>
+<view style='margin-top:28%;margin-left:33%;'>4</view>
+</view>
+<view style='margin-top:5px;color:{{colorfo}};'>完成注册</view>
+</view> 
+</view>
+
+
+<view  class='firstfield'hidden='{{firsthid}}'>
+<view class='name'style='width:100%;height:100px;display:flex;margin-left:5%;margin-top:10%;'>
+<view style='width:20%;'>姓名</view>
+<input style='margin-left:10px'></input>
+</view>
+<view class='name'style='width:100%;height:100px;display:flex;margin-left:5%;'>
+<view style='width:20%;'>性别</view>
+<input style='margin-left:10px'></input>
+</view>
+<view class='name'style='width:100%;height:100px;display:flex;margin-left:5%;'>
+<view style='width:20%;'>车牌号码</view>
+<input style='margin-left:10px'></input>
+</view>
+
+<view class='enbu'bindtap='nexttip'>
+<view style='margin-left:40%;margin-top:5px;'>下一步</view>
+</view>
+</view>
+
+<view  class='secondfield'hidden='{{secondhid}}'>
+<view class='cardsend'style='margin-left:5%;margin-top:10%;'>请上传身份证</view>
+<view style='display:flex;margin-left:5%;margin-top:5%;'>
+<view class='upborder'bindtap='getpersonimage'>
+<image src='{{personimageurl}}'hidden='{{personimagehide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{personimagehid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+<view style='color:#bfbfbf;font-size:13px;margin-left:25%;margin-top:-8%;'>身份证正面</view>
+</view>
+</view>
+<view class='upborder'style='margin-left:15%;'bindtap='getpersonseimage'>
+<image src='{{personseimageurl}}'hidden='{{personseimagehide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{personseimagehid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+<view style='color:#bfbfbf;font-size:13px;margin-left:25%;margin-top:-8%;'>身份证反面</view>
+</view>
+</view>
+</view>
+
+<view class='cardsend'style='margin-left:5%;margin-top:10%;'>驾驶证照片</view>
+<view style='display:flex;margin-left:5%;margin-top:5%;'>
+<view class='upborder'bindtap='getimageth'>
+<image src='{{thurl}}'hidden='{{thhide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{thhid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+</view>
+</view>
+</view>
+<view style='display:flex;'>
+<view class='cardsend'style='margin-left:5%;margin-top:10%;'>行驶证照片</view>
+<view class='cardsend'style='margin-left:25%;margin-top:10%;'>行驶证正本反面照片</view>
+</view>
+<view style='display:flex;margin-left:5%;margin-top:5%;'>
+<view class='upborder'bindtap='getimagefo'>
+<image src='{{fourl}}'hidden='{{fohide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{fohid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+</view>
+</view>
+<view class='upborder'style='margin-left:15%;'bindtap='getimagefi'>
+<image src='{{fiveurl}}'hidden='{{fivehide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{fivehid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+</view>
+</view>
+</view>
+<view class='cardsend'style='margin-left:5%;margin-top:10%;'>行驶证副本照片</view>
+<view style='display:flex;margin-left:5%;margin-top:5%;'>
+<view class='upborder'bindtap='getimagesi'>
+<image src='{{siurl}}'hidden='{{sihide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{sihid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+</view>
+</view>
+</view>
+
+<view class='cardsend'style='margin-left:5%;margin-top:10%;'>保险单照片</view>
+<view style='display:flex;margin-left:5%;margin-top:5%;'>
+<view class='upborder'bindtap='getimagesi'>
+<image src='{{siurl}}'hidden='{{sihide}}'style="width: 140px; height: 80px; "></image>
+<view hidden='{{sihid}}'>
+<image src='../../images/camera.png'style="width: 50px; height: 50px; margin-left:33%;margin-top:6%;"></image>
+</view>
+</view>
+</view>
+<view class='enbu'bindtap='nexttipse'style='margin-top:5%;'>
+<view style='margin-left:40%;margin-top:2%;'>下一步</view>
+</view>
+</view>
+
+<view  class='thirdfield'hidden='{{thirdhid}}'>
+<view class='enbu'bindtap='nexttipses'style='margin-top:5%;'>
+<view style='margin-left:40%;margin-top:2%;'>下一步</view>
+</view>
+</view>
+
+<view  class='fourfield'hidden='{{fourhid}}'>
+
+<view class='enbu'bindtap='toindex'style='margin-top:5%;'>
+<view style='margin-left:40%;margin-top:2%;'>点击开始派单</view>
+</view>
+</view>

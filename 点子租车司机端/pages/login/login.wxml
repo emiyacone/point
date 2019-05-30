@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='logintitle'>欢迎登录点子出行</view>
+<view class='loginmessage'>
+<input class='inputid' type='number' placeholder='请输入手机号码'maxlength='11'></input>
+<view class='middle'>
+<input class='inoutpsw'  type='number' placeholder='请输入验证码'bindfocus='changelogincolor'></input>
+<view class='gettest'style='background-color:{{tbcolor}}'>获取验证码</view>
+</view>
+<view class='loginbutton'style='background-color:{{lbcolor}}'bindtap='changetopage'>登录</view>
+<view class='clicksign'  bindtap='sendtosignin'>点击注册</view>
+</view>
+<view class='end'>点击登录表示同意
+  <view class='endtitle' >《用户条款》</view>
+</view>

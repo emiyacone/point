@@ -1,0 +1,292 @@
+<!--pages/route/special.wxml-->
+<view class="navbar">
+  <view class='usrimage' bindtap='topersonal'>
+    <image src='../images/peopleface.png' style="width: 30px; height: 30px; background-color: white;margin-left:10px;margin-top:5px;"></image>
+  </view>
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index?'active': ''}}" wx:key="unique" bindtap="navbarTap" style='font-size:17px;'>{{item}}</text>
+</view>
+
+<!--专车-->
+<view hidden='{{currentTab!=0}}'>
+  <view class='main'>
+    <view class='messageend'>
+      <view style='margin-left:20%;width:70%;height:10px;border-top:1px solid white'></view>
+      <view class='tomessage'>
+        <view class='start' bindtap='startplace'>
+          <image src='../images/startplace.png' class='imagetitle'></image>
+          <view style='width:7%;'></view>
+          <view class='inputme' style='color:{{startcolor}}'>{{startplace}}</view>
+        </view>
+        <view class='divlinex'></view>
+        <view class='endplace' bindtap='endplace'>
+          <image src='../images/toplace.png' class='imagetitle'>
+          </image>
+          <view style='width:7%;'></view>
+          <view class='inputme' style='color:{{endcolor}}'>{{endplace}}</view>
+        </view>
+        <view class='divlinex'></view>
+            <picker range="{{personsn}}" value="{{cursor}}" bindchange='getnowc'>
+        <view class='endplace'>
+          <image src='../images/people.png' class='imagetitle'></image>
+          <view style='width:7%;'></view>
+       
+          <view class='inputme' style='width:100px;color:{{peoplenumcolor}}'>
+              <input placeholder='{{personnumber}}' disabled='true' placeholder-style=' color:{{peoplenumcolor}};' bindinput='inputget' value='{{inputvalue}}'></input>
+          </view>
+       
+        </view>
+             </picker>
+        <view class='divlinex'></view>
+        <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" range="{{dateTimeArray1}}" bindcolumnchange="changeDateTimeColumn1">
+          <view class='futuretime'>
+            <image src='../images/timeso.png' class='imagetitle'></image>
+            <!-- <view style='margin-left:5%;'>日期：{{selectdate}},时间：{{selecttime}}</view> -->
+            <view style='width:7%;'></view>
+            <view class='inputme'>
+              <view style='color:{{timecolor}}' hidden='{{timehide}}'>出行时间</view>
+              <view style='color:{{timecolor}}' hidden='{{timeshow}}'>{{dateTimeArray1[0][dateTime1[0]]}}{{dateTimeArray1[1][dateTime1[1]]}}{{dateTimeArray1[2][dateTime1[2]]}}日 {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</view>
+
+            </view>
+          </view>
+        </picker>
+      </view>
+      <view class='zuchetitle'>
+        <view class='zuchetype'>
+          <text style='margin:auto;' bindtap='tobusinesscar'>选择租车类型</text>
+        </view>
+      </view>
+    </view>
+    <view class='cartype' bindtap='tobusinesscar' hidden='{{carhide}}'>
+      <image src='https://dianzichuxings.aptdev.cn/{{typecar.timg}}' style='width:80px;height:55px;margin:7.5px 10px;'></image>
+      <view style='margin:auto'>{{typecar.cartypename}}</view>
+      <view style='margin:auto'>
+        <view style='border:1px solid #EBEBEB;width:50px;text-align:center; border-radius: 5px 5px 5px 5px;'>
+          {{typecar.zwnum}}座
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class='ygprice' hidden='{{ygjg==0}}'>预计价格:{{ygjg}}元</view>
+  <view class='endtap'>
+
+    <view style='border-radius: 20px 20px 20px 20px;width:30%;margin-left:35%;background-color:#9ac81f;color:white;display:flex;' bindtap='changestate'>
+      <view style='margin:auto'>确认租车</view>
+    </view>
+  </view>
+</view>
+
+<!--自驾出租-->
+<view hidden='{{currentTab!=1}}' class='mains'>
+  <view class='mains'>
+    <view class='messageend'>
+      <view class='top'>
+        <view class='placestyle'>
+          <view class='place_title'>
+            <image src='../images/greenpoint.png' class='imagetitle'></image>
+            <text class='place_where'>取车地点</text>
+          </view>
+          <view style='width:400px;'>
+            <picker mode="region" bindchange="bindRegionChanges" value="{{region}}" custom-item="{{customItem}}">
+              <text style='width:80%;margin-left:10%;'>{{regionstart}}</text>
+            </picker>
+          </view>
+        </view>
+        <view class='divlinex'></view>
+        <view class='placestyle'>
+          <view class='place_title'>
+            <image src='../images/redpoint.png' class='imagetitle'></image>
+            <text class='place_where'>还车地点</text>
+          </view>
+          <view style='width:400px;'>
+            <picker mode="region" bindchange="bindRegionChangek" value="{{region}}" custom-item="{{customItem}}">
+              <text style='margin-left:10%;'>{{regionend}}</text>
+            </picker>
+          </view>
+        </view>
+        <!-- {{dateTimeArray3[0][dateTime3[0]]}}年 -->
+        <view class='divlinex'></view>
+        <view class='timeselect' style='width:90%;'>
+          <view class='place_title'>
+            <image src='../images/timeso.png' class='imagetitle'></image>
+            <view style='width:90px;'>
+              <picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray2}}" style='width:100%;'>
+                <view style='width:100%;margin-left:20px;color:grey;' hidden='{{timehide}}'>起始时间</view>
+                <text style='width:40%;margin-left:20px;color:grey;' hidden='{{timeshow}}'>{{dateTimeArray2[1][dateTime2[1]]}}{{dateTimeArray2[2][dateTime2[2]]}}日</text>
+              </picker>
+            </view>
+            <view class='daynum'>
+              <view class='daysum'>--{{num}}天--</view>
+            </view>
+            <view style='width:90px;'>
+              <picker mode="multiSelector" value="{{dateTime3}}" bindchange="changeDateTime3" bindcolumnchange="changeDateTimeColumn3" range="{{dateTimeArray3}}" style='width:100%;'>
+                <view style='width:100%;margin-left:10%;color:grey;' hidden='{{timehide1}}'>结束时间</view>
+                <text style='width:60%;margin-left:10%; color:grey; ' hidden='{{timeshow1}}'>{{dateTimeArray3[1][dateTime3[1]]}}{{dateTimeArray3[2][dateTime3[2]]}}日</text>
+              </picker>
+            </view>
+          </view>
+          <view style='display:flex;'>
+            <view style='width:90px;margin-left:40px;'>
+              <picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray2}}">
+                <text style='color:grey;' hidden='{{timeshow}}'>{{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}</text>
+              </picker>
+            </view>
+            <view style='width:90px;'>
+              <picker mode="multiSelector" value="{{dateTime3}}" bindchange="changeDateTime3" bindcolumnchange="changeDateTimeColumn3" range="{{dateTimeArray3}}">
+                <text style='width:60%;margin-left:120px;color:grey;' hidden='{{timeshow1}}'>{{dateTimeArray3[3][dateTime3[3]]}}:{{dateTimeArray3[4][dateTime3[4]]}}</text>
+              </picker>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='zuchetitle'>
+        <view class='zuchetype'>
+          <text style='margin:auto;' bindtap='tobusinesscar'>选择租车类型</text>
+        </view>
+      </view>
+    </view>
+    <view class='cartype' bindtap='tobusinesscar' hidden='{{carhide}}'>
+      <image src='https://dianzichuxings.aptdev.cn/{{typecar.timg}}' style='width:80px;height:55px;margin:7.5px 10px;'></image>
+      <view style='margin:auto'>{{typecar.cartypename}}</view>
+      <view style='margin:auto'>
+        <view style='border:1px solid #EBEBEB;width:50px;text-align:center; border-radius: 5px 5px 5px 5px;'>
+          {{typecar.zwnum}}座
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='endtap'>
+    <view style='border-radius: 20px 20px 20px 20px;width:30%;margin-left:35%;background-color:#9ac81f;color:white;display:flex;' bindtap='zijiachuzu'>
+      <view style='margin:auto'>确认租车</view>
+    </view>
+  </view>
+</view>
+
+<!--大巴-->
+<view hidden='{{currentTab!=2}}'>
+  <view class='mains'>
+    <view class='messageend'>
+      <view style='margin-left:20%;width:70%;height:10px;border-top:1px solid white'></view>
+      <view class='tomessage'>
+        <view class='start' bindtap='startplace'>
+          <image src='../images/startplace.png' class='imagetitle'></image>
+          <view style='width:7%;'></view>
+          <view class='inputme' style='color:{{startcolor}}'>{{startplace}}</view>
+        </view>
+        <view class='divlinex'></view>
+        <view class='endplace' bindtap='endplace'>
+          <image src='../images/toplace.png' class='imagetitle'>
+          </image>
+          <view style='width:7%;'></view>
+          <view class='inputme' style='color:{{endcolor}}'>{{endplace}}</view>
+        </view>
+        <view class='divlinex'></view>
+        <view class='endplace'>
+          <image src='../images/people.png' class='imagetitle'></image>
+          <view style='width:7%;'></view>
+          <view class='inputme' style='width:100px;color:{{peoplenumcolor}}'>
+            <input placeholder='{{personnumber}}' placeholder-style=' color:#e0e3da;' bindinput='inputget' value='{{inputvalue}}'></input>
+          </view>
+        </view>
+        <view class='divlinex'></view>
+        <view class='futuretime' bindtap='changeperson'>
+          <image src='../images/timeso.png' class='imagetitle'></image>
+          <!-- <view style='margin-left:5%;'>日期：{{selectdate}},时间：{{selecttime}}</view> -->
+          <view style='width:7%;'></view>
+          <view class='inputme'>
+            <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" range="{{dateTimeArray1}}" bindcolumnchange="changeDateTimeColumn1">
+              <view style='color:{{timecolor}}' hidden='{{timehide}}'>出行时间</view>
+              <view style='color:{{timecolor}}' hidden='{{timeshow}}'>{{dateTimeArray1[0][dateTime1[0]]}}{{dateTimeArray1[1][dateTime1[1]]}}{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class='zuchetitle'>
+        <view class='zuchetype'>
+          <text style='margin:auto;' bindtap='tobusinesscar'>选择租车类型</text>
+        </view>
+      </view>
+    </view>
+    <view class='cartype' bindtap='tobusinesscar' hidden='{{carhide}}'>
+      <image src='https://dianzichuxings.aptdev.cn/{{typecar.timg}}' style='width:80px;height:55px;margin:7.5px 10px;'></image>
+      <view style='margin:auto'>{{typecar.cartypename}}</view>
+      <view style='margin:auto'>
+        <view style='border:1px solid #EBEBEB;width:50px;text-align:center; border-radius: 5px 5px 5px 5px;'>
+          {{typecar.zwnum}}座
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='endtap'>
+    <view style='border-radius: 20px 20px 20px 20px;width:30%;margin-left:35%;background-color:#9ac81f;color:white;display:flex;' bindtap='changestatebus'>
+      <view style='margin:auto'>确认租车</view>
+    </view>
+  </view>
+</view>
+
+
+<view hidden='{{currentTab!=3}}' class='main'>
+  <view style='width:100%;height:400px;display:flex;'>
+    <view class='waitcar'>
+      <view style='margin:auto;'>等待派车中</view>
+    </view>
+  </view>
+  <view class='endtap'>
+    <view style='margin:auto;display:flex;color:white;background-color:#EAEAEA;color:grey;width:25%;height:30px; border-radius: 5px 5px 5px 5px;'>
+      <view style='margin:auto;' bindtap='cancelorder'>
+        取消用车
+      </view>
+    </view>
+  </view>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="继续等待" cancel-text="取消订单" bindcancel="cancel" bindconfirm="confirm">
+    <image src='../images/icon.png' style='width: 60px; height: 60px; background-color: white;margin-left:40%'></image>
+    <view style='margin-left:10%;'>亲，再等会，司机马上驾到</view>
+  </modal>
+</view>
+
+
+<view hidden='{{currentTab!=4}}' class='mains'>
+  <view class='cartype'>
+    <image src='../images/startplace.png' style='width: 20px; height: 20px; background-color: white;margin:auto;'></image>
+    <view style='margin:auto;'>车辆信息：</view>
+    <view class='licence'>
+      <view class='licencetitle'>
+        <view style='margin:auto;'>{{carnum}}</view>
+      </view>
+      <view class='carname' style='color:grey;margin:auto'>{{carcolor}}*{{cartypename}}</view>
+    </view>
+  </view>
+
+  <view class='cartype'>
+    <image src='../images/callonce.png' style='width: 20px; height: 20px; background-color: white;margin:auto;'></image>
+    <view style='margin:auto;'>联系方式：</view>
+    <view class='licence'>
+      <view style='margin:auto;'>{{sjphone}}</view>
+    </view>
+  </view>
+
+  <view style='display:flex;width:100%;height:70px;margin-top:20px;'>
+    <view class='buttongetcar' bindtap='locationcar'>
+      <image src='../images/toplace.png' style='width: 20px; height: 20px;margin:auto;'></image>
+      <view style='margin:auto;'>车辆位置</view>
+    </view>
+    <view class='buttongetcar' bindtap='contactservice'>
+      <image src='../images/service2.png' style='width: 20px; height: 20px;white;margin:auto;'></image>
+      <view style='margin:auto;'>联系客服</view>
+    </view>
+
+  </view>
+
+  <view class='endtap'>
+    <view style='margin:auto;display:flex;color:white;background-color:#EAEAEA;color:grey;width:25%;height:30px; border-radius: 5px 5px 5px 5px;'>
+      <view style='margin:auto;' bindtap='cancelorder'>
+        取消用车
+      </view>
+    </view>
+  </view>
+
+  <modal hidden="{{hiddenmodalput}}" confirm-text="继续等待" cancel-text="取消订单" bindcancel="cancel" bindconfirm="confirm">
+    <image src='../images/icon.png' style='width: 60px; height: 60px; background-color: white;margin-left:40%'></image>
+    <view style='margin-left:15%;'>亲，再等会，司机马上驾到</view>
+  </modal>
+</view>

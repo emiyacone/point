@@ -1,0 +1,87 @@
+/* pages/locationcar/locationcar.wxss */
+/* pages/journey/endjourney/endjourney.wxss */
+.return{
+  width:50px;
+  height:50px;
+  border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    margin-left: 80%;
+
+}
+.mapend{
+  width:100%;
+  height:100px;
+  display:flex;
+}
+.futuretime{
+  display: flex;
+  margin:auto;
+  width:40%;
+  height:40px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #EBEBEB;
+}
+.box{
+  width:90%;
+  margin:10px 5%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+.drive{
+  width:100%;
+  height:65px;
+  display:flex;
+}
+.money{
+  width:100%;
+  height:100px;
+  border-top:1rpx solid #E0E3DA;
+}
+.pay{
+  width:100%;
+  height:40px;
+  background-color: #9AC81F;
+}
+.moneycss{
+  margin-top:40px;
+  margin-left: 47%;
+}
+.licence{
+  width:40%;
+  height:72px;
+}
+.licencetitle{
+  height:20px;
+  margin-left: 10%;
+  margin-top: 15%;
+  text-align: center;
+  border: 1px solid #E0E3DA;
+  width:60%;
+border-radius: 5px 5px 5px 5px;
+background-color: #EBEBEB;
+font-size: 13px;
+
+}
+.driverimage{
+  width:40px;
+  height:40px;
+  border-radius: 60px 60px 60px 60px;
+  background-color: #9ac81f;
+  margin-top:2%;
+  margin-left:5%;
+}
+.detailmessage{
+  margin-left:20%;
+    margin-top:4%;
+    width:80px;
+}
+.star{
+  color:#9ac81f;
+  text-align: center;
+  margin-left:22%;
+}
+.paycss{
+  margin-top:10px;
+  margin-left: 40%;
+  color: white;
+}

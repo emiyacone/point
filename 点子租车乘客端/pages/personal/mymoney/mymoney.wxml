@@ -1,0 +1,49 @@
+<!--pages/personal/mymoney/mymoney.wxml-->
+
+<view class='head'>余额</view>
+<view class='line'></view>
+<view class='linedivide'></view>
+<view class='middlef'style='border-radius:40px 40px 40px 40px;'>
+<view style='width:90%;display:flex;'>
+<image src='../../images/emoney.png'style="width: 15px; height: 15px; background-color: white;margin-top:3px;"></image>
+<view style='margin-left:3%;font-size:15px;width:80%;'>账户余额</view>
+<view class='mymoney'style='font-size:12px;'>{{mymoney}}元</view>
+</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+<view class='line'></view>
+<view class='middles'>
+<view>券</view>
+<view class='learnmore'style='font-size:12px;margin-left:70%;margin-top:1px;'>查看更多</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image></view>
+<view class='linedivide'></view>
+<view class='middlet'>
+<view class='ticketmessage'style='width:90%;'>
+<image src='../../images/quan.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view style='margin-left:2%;font-size:15px;width:80%;'>点子出行券</view>
+<view class='myticket'>{{myticket}}元</view>
+</view>
+<view class='tickettime'>有效期至{{tickettime}}</view>
+</view>
+<view class='line'></view>
+<view class='title'>积分</view>
+<view class='linedivide'></view>
+<view class='middlefo'>
+<view style='width:90%;display:flex;'>
+<image src='../../images/score.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view style='margin-left:3%;font-size:15px;width:80%;'>我的积分</view>
+<view class='myscore'>{{myscore}}分</view>
+</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+<view class='line'></view>
+<view class='title'>票据</view>
+<view class='linedivide'></view>
+<view class='middlefo'>
+<image src='../../images/moneyticket.png'style="width: 20px; height: 20px; background-color: white;"></image>
+<view style='margin-left:3%;font-size:15px;width:10%;'>发票</view>
+<view class='myfa'style='color:grey;margin-top:5px'>（点子发票，值得信赖的报销助手）</view>
+<view class='tokai'style='color:grey;margin-left:5%'>开发票</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+

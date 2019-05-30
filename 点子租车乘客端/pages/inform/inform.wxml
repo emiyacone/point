@@ -1,0 +1,6 @@
+<!--pages/inform/inform.wxml-->
+<view class='title'>标题</view>
+<view class='main'>
+正文
+
+</view>

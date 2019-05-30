@@ -1,0 +1,14 @@
+<!--pages/advice/advice.wxml-->
+<!--pages/questions/questions.wxml-->
+<view class='main'>
+<view class='box' style=''>
+<textarea style='margin-top:5%;margin-left:5%;height:200px;'placeholder='您的意见与建议是我们前进的目标'></textarea>
+</view>
+<view class='chooseimage'>
+<image src='../images/plus.png'style="width: 40px; height: 40px; background-color: white;margin:30px"></image>
+</view>
+
+<view class='nexto'bindtap='changeto'>
+<view style='margin-top:1%;font-size:15px;'>提交</view>
+</view>
+ </view>

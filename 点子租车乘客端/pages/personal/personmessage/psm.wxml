@@ -1,0 +1,49 @@
+<!--pages/personal/personmessage/psm.wxml-->
+<view class='head'bindtap='changehead'>
+<view class='headcircle'>
+<image src='{{url}}'style="width: 80px; height: 80px; background-color: white; border-radius: 80px 80px 80px 80px;"></image>
+</view>
+<view class='headimage'>修改头像</view>
+</view>
+
+<view class='middle'>
+<view class='line l1'></view>
+<view class='message m1'>昵称
+ <view class="section">
+<input  placeholder='起个独特名字吧' bindinput='getname'></input>
+</view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>性别
+<radio-group style="margin-left:30px;" bindchange='getsex'>
+ <radio value="true" checked="" />男
+  <radio value="false" checked="" style="margin-left:30px;"/>女
+</radio-group>
+</view>
+<view class='line l1'></view>
+<view class='message m1' >年龄
+ <view class="section" style='color:{{agecolor}}'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <!-- <view class="picker"> -->
+      <view hidden='{{agehide}}'>多大了</view>
+      <view hidden='{{ageshow}}'>{{array[index]}}岁</view>
+  <!-- </view> -->
+  </picker>
+ </view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>职业
+ <view class="section">
+<input  placeholder='添加你的职业' bindinput='getuzy'></input>
+</view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>手机号
+ <view class="section">
+<input  placeholder='1888***888'style='width:80%'bindinput='getphone'></input>
+</view>
+<image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+</view>
+
+<view class='end' bindtap='editmessage'>完成</view>

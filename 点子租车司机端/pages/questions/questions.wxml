@@ -1,0 +1,25 @@
+<!--pages/questions/questions.wxml-->
+<view class='top'>
+<view class='putquestions'style='background-color:{{putquestionscolor}};color:{{puttextcolor}}'>
+<view style='margin-left:26%;font-size:15px;'>提反馈</view>
+</view>
+<view class='myquestions'style='background-color:{{myquestionscolor}};color:{{mytextcolor}}'>
+<view style='margin-left:26%;font-size:15px;'>我的反馈</view>
+</view>
+</view>
+
+<view class='main'>
+<view class='questiontype'>
+<view class='title'>请选择问题分类</view>
+<image src='../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image>
+</view>
+<view class='line'></view>
+<textarea style='margin-top:5%;margin-left:5%;height:200px;'placeholder='您的意见与建议是我们前进的目标'></textarea>
+<view class='chooseimage'>
+<image src='../images/plus.png'style="width: 40px; height: 40px; background-color: white;margin:30px"></image>
+</view>
+
+<view class='nexto'bindtap='changeto'style='margin-top:{{topheight}}px;'>
+<view style='margin-top:1%;font-size:15px;'>提交</view>
+</view>
+ </view>

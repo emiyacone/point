@@ -1,0 +1,42 @@
+<!--pages/personal/personmessage/psm.wxml-->
+<view class='head'bindtap='changehead'>
+<view class='headcircle'>
+<image src='{{url}}'style="width: 80px; height: 80px; background-color: white; border-radius: 80px 80px 80px 80px;"></image>
+</view>
+</view>
+
+<view class='middle'>
+<view class='line l1'></view>
+<view class='message m1'>昵称
+ <view class="section">
+<view>{{uname}}</view>
+</view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>性别
+ <view class="section">
+<view>{{sex}}</view>
+</view>
+</view>
+<view class='line l1'></view>
+<view class='message m1' >年龄
+ <view class="section" style='color:{{agecolor}}'>
+ <view>{{age}}</view>
+ </view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>职业
+ <view class="section">
+<view>{{uzy}}</view>
+</view>
+</view>
+<view class='line l1'></view>
+<view class='message m1'>手机号
+ <view class="section" style='margin-left:29rpx;width:300rpx;'>
+<view>{{uphone}}</view>
+</view>
+<!-- <image src='../../images/enter.png'style="width: 20px; height: 20px; background-color: white;"></image> -->
+</view>
+</view>
+<view class='end2' bindtap='edit'>修改信息</view>
+<view class='end' bindtap='exit'>退出登陆</view>

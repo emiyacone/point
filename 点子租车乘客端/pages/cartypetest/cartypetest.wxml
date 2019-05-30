@@ -1,0 +1,170 @@
+<!--pages/cartypetest/cartypetest.wxml-->
+<view class='main'>
+  <view class='head'>
+    <image src='https://dianzichuxings.aptdev.cn/{{timg}}' style='width:60%;height:150px;margin-left:20%; border-radius: 5px 5px 5px 5px;'></image>
+    <view style='margin-left:10%;'>{{cartypename}}</view>
+  </view>
+  <view class='type'>
+    <view style='height:10px;width:100%;'></view>
+    <view class='selectname'>
+      <view class='self' style='border:{{bordercss1}}' bindtap='changetypez1'>
+        <text style='margin:auto;color:{{zcolor1}};'>自取</text>
+      </view>
+      <view class='sendcardoor' style='color:{{scolor1}};border:{{sbc1}};border-radius:5px 5px 5px 5px;'>
+        <text style='margin:auto;' bindtap='changetypes1'>送车上门</text>
+      </view>
+    </view>
+    <view style='height:10px;width:100%;'></view>
+    <view class='selectname'>
+      <view class='door'>{{takecar}}:</view>
+      <view class='hotel'>
+        <view class='picker' style='margin:auto;'>
+          <text style='margin:auto;' bindtap='takecar' hidden='{{startfirst}}'>{{startfirstplace}}</text>
+          <picker mode='selector' bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" range-key='mdmc' bindtap='getmendian'> 
+            <text hidden='{{startsecond}}'>{{startsecondplace}}</text>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='selectname'>
+      <view class='door'>{{servertime}}：</view>
+      <view style='display:flex'>
+        <text style='margin:auto;' hidden='{{starthide}}'>00:00-23:59</text>
+        <view style='margin:auto;'>
+        <picker bindchange="bindchangetime1" value="{{index3}}" range="{{array3}}">
+  <view class="picker" hidden='{{startshow}}'>
+   当前选择：{{array3[index3]}}
+  </view>
+  </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class='selectname' style='margin-top:10px;'>
+      <view class='self' style='border:{{bordercss2}}' bindtap='changetypez2'>
+        <text style='margin:auto;color:{{zcolor2}};'>自取</text>
+      </view>
+      <view class='sendcardoor' style='color:{{scolor2}};border:{{sbc2}};border-radius:5px 5px 5px 5px;'>
+        <text style='margin:auto;' bindtap='changetypes2'>还车上门</text>
+      </view>
+    </view>
+    <view style='height:10px;width:100%;'></view>
+    <view class='selectname'>
+      <view class='door'>{{sendcar}}:</view>
+      <view class='hotel'>
+        <view class='picker' style='margin:auto;'>
+          <text style='margin:auto;' bindtap='sendcar' hidden='{{endfirst}}'>{{endfirstplace}}</text>
+          <picker mode='selector' bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}" range-key='mdmc'bindtap='getmendian'>
+            <text hidden='{{endsecond}}'>{{endsecondplace}}</text>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='selectname'>
+      <view class='door'>{{servertime2}}：</view>
+      <view style='display:flex'>
+        <text style='margin:auto;' hidden='{{endhide}}'>00:00-23:59</text>
+            <view style='margin:auto;'>
+        <picker bindchange="bindchangetime2" value="{{index4}}" range="{{array4}}">
+  <view class="picker" hidden='{{endshow}}'>
+   当前选择：{{array4[index4]}}
+  </view>
+  </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='money'>
+
+    <view class='selectname' style='padding-top:10px;'>
+      <view class='door'>日租车：</view>
+      <view class='price'>￥{{rizu}}</view>
+      <switch checked='checked' type='checkbox' style='margin-left:30%;'></switch>
+    </view>
+    <view class='selectname' style='margin-top:5px;'>
+      <view class='door'>押金：</view>
+      <view class='price'>￥{{yajin}}</view>
+      <switch  checked='checked'  type='checkbox' style='margin-left:30%;'></switch>
+    </view>
+  </view>
+  <view style='margin-left:5%;width100px;height:30px;display:flex;'>
+    <text style='font-size:15px;'>驾驶员信息</text>
+  </view>
+
+  <view class='drive'>
+    <view class='adddrive'>
+      <view style='height:10px;width:100%;'></view>
+      <view class='addmess' bindtap='adddrivemes'>
+        <text style='margin:auto;font-size:15px;color:grey'>+驾驶员信息</text>
+      </view>
+    </view>
+    <radio-group>
+    <view wx:for="{{items}}" wx:for-index="index" wx:for-item="items">
+    <view class='driveme' >
+      <view style='height:10px;width:100%;'></view>
+      <view class='selectname'>
+        <view class='door' style='font-size:15px;color:grey;'>姓名：</view>
+        <view style='font-size:15px;color:grey;'>{{items.xm}}</view>
+      </view>
+      <view class='selectname'>
+        <view class='door' style='font-size:15px;color:grey;'>身份证：</view>
+        <view style='font-size:15px;color:grey;'>{{items.sfznum}}</view>
+      </view>
+    </view>
+<radio class='radio' id='{{items.id}}' bindtap='chooseid'></radio>
+    </view>
+    </radio-group>
+  </view>
+  <view class='title'>
+    <text >
+驾驶员年龄与驾龄要求
+</text>
+  </view>
+  <view class='message'>
+    <text>
+驾驶员最低年龄限制：21岁
+租车公司对不满30岁的驾驶员收取低领驾驶员费，该费用金额以门店收取金额为准。
+</text>
+  </view>
+
+  <view class='title'>
+    <text>
+燃油及里程说明
+</text>
+  </view>
+  <view class='message' style='height:40px'>
+    <text>
+满油取环，里程无限制。
+</text>
+  </view>
+
+  <view class='title'>
+    <text>
+订单修改规则
+</text>
+  </view>
+  <view class='message' style='height:60px'>
+    <text>
+订单成功提交后将无法修改，如需修改订单，请取消该订单后重新预订。
+</text>
+  </view>
+
+  <view class='title'>
+    <text >
+订单取消规则
+</text>
+  </view>
+  <view class='message'>
+    <text>
+您可在预约取车时间前取消订单，并且无需支付任何取消费用。
+点击立即预定表示您已阅读并同意预定条款。
+</text>
+  </view>
+
+  <view class='end' style='margin-top'>
+    <view style='width:50%;height:30px;margin-left:10px;margin-top:10px;font-size:13px;'>总价1500.00元</view>
+    <view style='height:30px;margin-left:10px;margin-top:10px;font-size:13px;'>费用说明</view>
+    <view style='width:23%;height:30px;margin-left:10px;margin-top:5px;text-align:center;background-color:#9ac81f;border-radius: 5px 5px 5px 5px;color:white;' bindtap='precar'>立即预订</view>
+  </view>
+</view>

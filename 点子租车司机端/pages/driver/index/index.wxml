@@ -1,0 +1,92 @@
+<!--pages/driver/index/index.wxml-->
+<view class='top'>
+<image src='../../images/driver.png'style="width: 30px; height: 30px; margin-left:10px;margin-top:6px;"></image>
+<view style='width:80%;height:18px;margin-top:5px;color:white;text-align:center;'>去接乘客</view>
+<image src='../../images/bell.png'style="width: 30px; height: 30px;  margin-left:-10px;margin-top:6px;"></image>
+</view>
+<view class='message'>
+<view class='now'>实时</view>
+<view style='font-size:15px;width:50%;margin-left:3%;color:grey'>当前订单</view>
+<view style='font-size:15px;color:grey;'>去接乘客</view>
+</view>
+<view class='trip'>
+<view style='display:flex;'>
+<image src='../../images/tentoc.png'style="width: 20px; height: 20px;  margin-left:20px;margin-top:6px;"></image>
+<view  style='margin-left:20px;'>{{startplace}}</view>
+</view>
+<image src='../../images/down.png'style="width: 15px; height: 12px;  margin-left:23px;margin-top:-10px;"></image>
+<view style='display:flex;'>
+<image src='../../images/circle.png'style="width: 20px; height: 20px;  margin-left:20px;margin-top:-2px;"></image>
+<view style='margin-left:20px;margin-top:-7px;'>{{endplace}}</view>
+</view>
+</view>
+<view class='line'></view>
+<view class='passenger' style='height:50px;'>
+<view style='display:flex;'>
+<view class='name'>{{name}}</view>
+<view class='phone'>{{phonenumber}}</view>
+<image src='../../images/sendmessage.png'style="width: 30px; height: 30px;  margin-left:20px;margin-top:10px;"></image>
+<image src='../../images/phone.png'style="width: 30px; height: 30px;  margin-left:20px;margin-top:10px;" bindtap='phonekh'></image>
+</view>
+<view class='introduce'>{{introduce}}</view>
+</view>
+<view class='line'></view>
+<map id="map4select"
+ longitude="{{longitude}}" latitude="{{latitude}}" 
+ markers="{{markers}}"
+ polyline="{{polyline}}"
+ scale="16" 
+ style="width:{{map_width}}px;height:{{map_height}}px"
+ controls="{{controls}}"
+  hidden='{{maphide}}'>
+    <cover-view class='return'style='margin-top:{{icontop}}px;'>
+  <cover-image src='../../images/location.png'style='width:33px;height:33px;margin:8px;'></cover-image>
+  </cover-view>
+  </map>
+  <view style='background-color:white;position:fixed;width:100%;bottom:300rpx;'>
+  <view class='rewardme'>
+  <view style='color:grey;margin-top:5px;margin-left:7%;width:75%;'>{{rewardme}}</view>
+  <view style='color:grey;margin-top:5px'>查看消息</view>
+  </view>
+  <view class='timelimit'hidden='{{timehide}}'>
+  <view style='margin-left:19%;'>请于</view>
+  <view style='color:#9ac81f'>{{timelimit}}</view>
+  <view>到达上车地点</view>
+  </view>
+  <view class='end'style='width:100%;display:flex;position:fixed;bottom:100rpx;background-color:white;height:80px;'>
+  <view class='button'bindtap='changetitle'>
+  <view style='margin-top:15px;'>{{buttonmess}}</view></view>
+  <view>
+  <image src='../../images/cplace.png'style="width: 30px; height: 30px; margin-left:10px;margin-top:5px;"></image>
+  <view style='font-size:10px;margin-left:2px;'>变更行程</view>
+  </view>
+  </view>
+  </view>
+
+  <view class="bg" style='display:{{display}}'></view>
+<view class="show" style='display:{{display}}'>
+账单已发送
+<view>
+<button size='mini' type='primary' bindtap='choosepaway'>确定</button>
+</view>
+</view>
+
+
+  <view class="bg" style='display:{{choosehide}}'></view>
+<view class="show" style='display:{{choosehide}}'>
+请确认乘客支付方式
+<view style='margin-top:5px'>
+<button size='mini' type='primary' bindtap='xianjin'>现金支付</button>
+<button size='mini' type='primary' bindtap='xianjin'>线上支付</button>
+</view>
+</view>
+
+
+<view class="bg" style='display:{{ischose}}'></view>
+<view class="show" style='display:{{ischose}}'>
+是否接单
+<view style='margin-top:5px'>
+<button size='mini' type='primary' bindtap='yeschose'>是</button>
+<button size='mini' type='warn'  bindtap='nochose'>否</button>
+</view>
+</view>
